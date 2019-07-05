@@ -1,13 +1,13 @@
-package luckycoffee.jnoro.community.community.model;
+package luckycoffee.jnoro.community.community.pojo.dto;
 
-import org.apache.ibatis.annotations.Select;
+import luckycoffee.jnoro.community.community.model.User;
 
 /**
- * @Description: 登录的用户信息
+ * @Description:
  * @Auther: jianrong.chen@luckincoffee.com
- * @Date: 2019/7/3 10:41
+ * @Date: 2019/7/4 17:26
  */
-public class User {
+public class QuestionDTO {
     /**
      * 主键 id
      */
@@ -47,6 +47,11 @@ public class User {
      * 图像的url
      */
     private String avatarUrl;
+
+    /**
+     * 发布人信息
+     */
+    private User user;
 
     /**
      * 获取 主键 id
@@ -202,5 +207,23 @@ public class User {
      */
     public void setBio(String bio) {
         this.bio = bio;
+    }
+
+    /**
+     * 获取 发布人信息
+     *
+     * @return user 发布人信息
+     */
+    public User getUser() {
+        return this.user;
+    }
+
+    /**
+     * 设置 发布人信息
+     *
+     * @param user 发布人信息
+     */
+    public void setUser(User user) {
+        this.user = user;
     }
 }

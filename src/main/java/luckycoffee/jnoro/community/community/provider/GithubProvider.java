@@ -2,6 +2,7 @@ package luckycoffee.jnoro.community.community.provider;
 
 import com.alibaba.fastjson.JSON;
 import luckycoffee.jnoro.community.community.pojo.dto.AccessTokenDTO;
+import luckycoffee.jnoro.community.community.pojo.dto.GithubUser;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -44,7 +45,7 @@ public class GithubProvider {
 
         try (Response response = client.newCall(request).execute()) {
            String string = response.body().string();
-           GithubUser githubUser = JSON.parseObject(string, GithubUser.class);
+           GithubUser githubUser = JSON.parseObject(string,GithubUser.class);
            return githubUser;
         } catch (IOException e) {
             e.printStackTrace();
