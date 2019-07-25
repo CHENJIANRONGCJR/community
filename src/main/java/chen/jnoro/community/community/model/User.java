@@ -1,10 +1,8 @@
-package luckycoffee.jnoro.community.community.model;
-
-import org.apache.ibatis.annotations.Select;
+package chen.jnoro.community.community.model;
 
 /**
  * @Description: 登录的用户信息
- * @Auther: jianrong.chen@luckincoffee.com
+ * @Auther: jianrong.chen
  * @Date: 2019/7/3 10:41
  */
 public class User {

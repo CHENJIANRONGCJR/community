@@ -1,8 +1,8 @@
-package luckycoffee.jnoro.community.community.model;
+package chen.jnoro.community.community.model;
 
 /**
  * @Description: 话题实体对象
- * @Auther: jianrong.chen@luckincoffee.com
+ * @Auther: jianrong.chen
  * @Date: 2019/7/3 15:58
  */
 public class Question {

@@ -1,6 +1,6 @@
-package luckycoffee.jnoro.community.community.mapper;
+package chen.jnoro.community.community.mapper;
 
-import luckycoffee.jnoro.community.community.model.User;
+import chen.jnoro.community.community.model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 
 /**
  * @Description: 用户登录信息的
- * @Auther: jianrong.chen@luckincoffee.com
+ * @Auther: jianrong.chen
  * @Date: 2019/7/3 10:39
  */
 @Mapper
@@ -19,6 +19,6 @@ public interface UserMapper {
     @Select("select * from t_community_user where token = #{token}")
     User findByToken(@Param("token") String token);
 
-    @Select("select * from t_community_user where id = #{creatorId}")
+    @Select("select * from t_community_user where id = #{Id}")
     User findById(@Param("Id") Integer Id);
 }

@@ -1,22 +1,23 @@
-package luckycoffee.jnoro.community.community.controller;
+package chen.jnoro.community.community.controller;
 
-import luckycoffee.jnoro.community.community.mapper.QuestionMapper;
-import luckycoffee.jnoro.community.community.mapper.UserMapper;
-import luckycoffee.jnoro.community.community.model.Question;
-import luckycoffee.jnoro.community.community.model.User;
+import chen.jnoro.community.community.mapper.QuestionMapper;
+import chen.jnoro.community.community.mapper.UserMapper;
+import chen.jnoro.community.community.model.Question;
+import chen.jnoro.community.community.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
 
 /**
  * @Description: 发布功能的Controller
- * @Auther: jianrong.chen@luckincoffee.com
+ * @Auther: jianrong.chen
  * @Date: 2019/7/3 14:27
  */
 @Controller

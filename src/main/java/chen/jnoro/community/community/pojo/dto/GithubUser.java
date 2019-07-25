@@ -1,10 +1,10 @@
-package luckycoffee.jnoro.community.community.pojo.dto;
+package chen.jnoro.community.community.pojo.dto;
 
 import lombok.Data;
 
 /**
  * @Description: Github用户实体信息
- * @Auther: jianrong.chen@luckincoffee.com
+ * @Auther: jianrong.chen
  * @Date: 2019/7/4 13:16
  */
 @Data

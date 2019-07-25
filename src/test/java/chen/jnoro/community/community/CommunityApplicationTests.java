@@ -1,4 +1,4 @@
-package luckycoffee.jnoro.community.community;
+package chen.jnoro.community.community;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

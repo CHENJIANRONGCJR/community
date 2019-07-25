@@ -48,20 +48,42 @@
     <div class="container-fluid main">
         <div class="row">
             <div class="col-lg-9 col-xs-12 col-sm-12 col-md-12">
-                <h2><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>发起</h2>
+                <h2><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>发现</h2>
                 <hr>
-                <div class="media">
+
+                <div class="media" th:each="question:${questions}">
                     <div class="media-left">
                         <a href="#">
-                            <img class="media-object img-rounded" src="https://avatars0.githubusercontent.com/u/43493636?v=4" width="38px" height="38px">
+                            <img class="media-object img-rounded"
+                                 th:src="${question.user.avatarUrl}" height="38px" width="38px">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">怎么快速学会 Spring boot 开发</h4>
+                        <h4 class="media-heading" th:text="${question.title}"></h4>
+                        <span th:text="${question.description}"></span><br>
                         点击进入看  本人录制的视频信息<br>
-                        <span class="text-desc">2个回复 • 31次浏览 • 1小时前 </span>
+                        <span class="text-desc"><span th:text="${question.commentCount}"></span>个回复 • <span th:text="${question.viewCount}"></span>次浏览 • <span th:text="${question.createTime}"></span></span>
                     </div>
                 </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
             </div>
             <div class="col-lg-3 col-xs-12 col-sm-12 col-md-12">

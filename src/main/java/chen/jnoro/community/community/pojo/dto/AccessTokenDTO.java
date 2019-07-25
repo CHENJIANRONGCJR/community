@@ -1,8 +1,8 @@
-package luckycoffee.jnoro.community.community.pojo.dto;
+package chen.jnoro.community.community.pojo.dto;
 
 /**
  * @Description:
- * @Auther: jianrong.chen@luckincoffee.com
+ * @Auther: jianrong.chen
  * @Date: 2019/7/2 08:41
  */
 public class AccessTokenDTO {
@@ -104,7 +104,7 @@ public class AccessTokenDTO {
 
     /**
      * @Description: Github用户信息
-     * @Auther: jianrong.chen@luckincoffee.com
+     * @Auther: jianrong.chen
      * @Date: 2019/7/2 09:22
      */
     public static class GithubUser {

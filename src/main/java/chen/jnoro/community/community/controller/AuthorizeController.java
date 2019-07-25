@@ -1,10 +1,10 @@
-package luckycoffee.jnoro.community.community.controller;
+package chen.jnoro.community.community.controller;
 
-import luckycoffee.jnoro.community.community.mapper.UserMapper;
-import luckycoffee.jnoro.community.community.model.User;
-import luckycoffee.jnoro.community.community.pojo.dto.AccessTokenDTO;
-import luckycoffee.jnoro.community.community.provider.GithubProvider;
-import luckycoffee.jnoro.community.community.pojo.dto.GithubUser;
+import chen.jnoro.community.community.mapper.UserMapper;
+import chen.jnoro.community.community.model.User;
+import chen.jnoro.community.community.pojo.dto.AccessTokenDTO;
+import chen.jnoro.community.community.pojo.dto.GithubUser;
+import chen.jnoro.community.community.provider.GithubProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -19,7 +19,7 @@ import java.util.UUID;
 
 /**
  * @Description:
- * @Auther: jianrong.chen@luckincoffee.com
+ * @Auther: jianrong.chen
  * @Date: 2019/7/2 08:31
  */
 @Controller

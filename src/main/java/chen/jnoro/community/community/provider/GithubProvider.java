@@ -1,8 +1,8 @@
-package luckycoffee.jnoro.community.community.provider;
+package chen.jnoro.community.community.provider;
 
+import chen.jnoro.community.community.pojo.dto.AccessTokenDTO;
+import chen.jnoro.community.community.pojo.dto.GithubUser;
 import com.alibaba.fastjson.JSON;
-import luckycoffee.jnoro.community.community.pojo.dto.AccessTokenDTO;
-import luckycoffee.jnoro.community.community.pojo.dto.GithubUser;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -14,7 +14,7 @@ import java.io.IOException;
 
 /**
  * @Description:  Github 第三方服务
- * @Auther: jianrong.chen@luckincoffee.com
+ * @Auther: jianrong.chen
  * @Date: 2019/7/2 08:39
  */
 @Component
